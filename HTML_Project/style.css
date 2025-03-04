@@ -1,0 +1,14 @@
+select* {
+  font-family: Arial, sans-serif;
+}
+.date {
+  font-family: Arial, sans-serif;
+}
+select {
+  padding: 5px;
+  margin: 5px;
+}
+
+.div {
+  border: 3px solid rebeccapurple;
+}
