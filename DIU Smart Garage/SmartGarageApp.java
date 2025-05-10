@@ -76,18 +76,30 @@ public class SmartGarageApp {
 
     static void createAccount() {
         System.out.print("Choose a username: ");
-        String newUser = sc.nextLine();
+        String newUser = sc.nextLine().trim();
+
+        // Validate username
+        if (newUser.isEmpty() || newUser.length() < 3) {
+            System.out.println(RED + "Username must be at least 3 characters long." + RESET);
+            return;
+        }
 
         // Check if the username already exists in the database
         List<Database.User> dbUsers = Database.getAllUsers();
         for (Database.User u : dbUsers) {
-            if (u.getUsername().equals(newUser)) {
+            if (u.getUsername().equalsIgnoreCase(newUser)) {
                 System.out.println(RED + "Username already exists. Try a different one." + RESET);
                 return;
             }
         }
 
-        String newPass = readPassword("Choose a password: ");
+        String newPass = readPassword("Choose a password (4 characters): ").trim();
+
+        // Validate password
+        if (newPass.isEmpty() || newPass.length() != 4) {
+            System.out.println(RED + "Password must be exactly 4 characters long." + RESET);
+            return;
+        }
 
         // Insert the new user into the database
         if (Database.insertUser(newUser, newPass, "user")) {

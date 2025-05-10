@@ -1,0 +1,259 @@
+/* General Reset and Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Welcome Screen */
+#welcomeScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../Image/dr06_5ev7_230323.jpg') no-repeat center center/cover;
+ backdrop-filter: blur(10px);  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.welcome-overlay {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.jump-button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.jump-button:hover {
+  background-color: #0056b3;
+}
+
+/* Menu Bar */
+.menu-bar {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-bar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background 0.3s ease;
+}
+
+.menu-bar button:hover {
+  background: #555;
+  border-radius: 6px;
+}
+
+/* Sections */
+.section {
+  padding: 20px;
+}
+
+/* Note and Photo Containers */
+.note-photo-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.note-section,
+.photo-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-section textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  resize: none;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.note-section button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.note-section button:hover {
+  background-color: #218838;
+}
+
+#photoInput {
+  margin-top: 10px;
+}
+
+#photoPreview img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Footer Date Section */
+.date-footer {
+  background-color: #e8e8e8;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+/* New Thought Section */
+#new-thought {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#new-thought textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  resize: none;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#new-thought button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#new-thought button:hover {
+  background-color: #0056b3;
+}
+
+#new-thought p {
+  margin-top: 15px;
+}
+
+/* Photo upload section styles */
+#new-thought input[type="file"] {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+#new-thought #photoPreview {
+  margin-top: 15px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-thought #photoPreview img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.thought-photo-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Optional: makes it responsive */
+}
+
+.thought-section,
+.photo-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+}
+.thought-section textarea {
+  width: 100vw;
+  height: 80vh;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.2rem;
+  resize: vertical;
+}
+
+.photo-section {
+  margin-top: 20px;
+}
+.thought-photo-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.thought-box,
+.photo-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 300px;
+}
+
+textarea#newThought {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+#photoPreview img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 6px;
+}

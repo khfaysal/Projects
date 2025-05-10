@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThoughtBox</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen">
+      <div class="welcome-overlay">
+        <h1>Welcome to ThoughtBox</h1>
+        <button class="jump-button" onclick="enterThoughtBox()">
+          Jump on it
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" style="display: none">
+      <!-- Menu Bar -->
+      <nav class="menu-bar">
+        <button onclick="showSection('new-thought')">New Thought</button>
+        <button onclick="showSection('daily')">Daily Stack</button>
+        <button onclick="showSection('previous')">Previous Learning</button>
+      </nav>
+      <section id="new-thought" class="section">
+        <h2>New Thought</h2>
+
+        <!-- Container for both boxes -->
+        <div class="non-photo-container">
+          <!-- Text Thought Box -->
+          <div class="thought-box">
+            <h3>Write a Thought</h3>
+            <textarea
+              id="newThought"
+              placeholder="What's on your mind today?"
+            ></textarea>
+            <button onclick="saveNewThought()">Save Thought</button>
+            <p><strong>Saved Thought:</strong></p>
+            <p id="savedThought"></p>
+          </div>
+
+          <!-- Photo Upload Box -->
+          <div class="photo-box">
+            <h3>Upload a Photo</h3>
+            <input
+              type="file"
+              id="photoInput"
+              accept="image/*"
+              onchange="previewPhoto(event)"
+            />
+            <div id="photoPreview"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daily Stack Section -->
+      <section id="daily" class="section">
+        <h2>Daily Stack</h2>
+        <p>Track your daily activities here!</p>
+        <!-- You can add daily tracking elements here -->
+      </section>
+
+      <!-- Previous Learning Section -->
+      <section id="previous" class="section" style="display: none">
+        <h2>Previous Learning</h2>
+        <div class="note-photo-container">
+          <!-- Note Section -->
+          <div class="note-section">
+            <textarea
+              id="note"
+              placeholder="Write your thoughts here..."
+            ></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <p><strong>Saved Note:</strong></p>
+            <p id="savedNote"></p>
+          </div>
+
+          <!-- Photo Section -->
+          <div class="photo-section">
+            <h3>Upload a Photo</h3>
+            <input
+              type="file"
+              id="photoInput"
+              accept="image/*"
+              onchange="previewPhoto(event)"
+            />
+            <div id="photoPreview"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Date Section -->
+      <footer class="date-footer">
+        <p id="currentDate"></p>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
