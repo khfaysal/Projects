@@ -6,6 +6,10 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+#mainContent{
+  width: 100%;
+  height: 100%;
+}
 /* Welcome Screen */
 #welcomeScreen {
   position: fixed;
