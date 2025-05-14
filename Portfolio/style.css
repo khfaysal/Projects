@@ -64,8 +64,7 @@
   font-size: 11px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(164, 160, 160);
-  font-family:Arial, Helvetica, sans-serif
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 #sec {
   width: 100%;
@@ -119,8 +118,10 @@
   background-color: #2f3140;
 }
 #name {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   font-size: 19px;
-  /* margin-bottom: 3px; */
   font-family: fantasy;
   color: rgb(145, 93, 93);
 }
@@ -136,7 +137,7 @@
   width: 20px;
   display: flex;
   align-items: center;
-    margin-left: 8px;
+  margin-left: 8px;
   margin-top: 4px;
 }
 #Bee {
@@ -149,7 +150,7 @@
   width: 30px;
   display: flex;
   align-items: center;
-    margin-left: 4px;
+  margin-left: 4px;
   margin-top: 2px;
 }
 #Git {
@@ -178,7 +179,7 @@
 }
 #cont h2 {
   font-size: 38px;
-  color: #5E73AC;
+  color: #5e73ac;
 }
 #cont i {
   color: azure;

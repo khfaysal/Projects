@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+.pic {
+  width: 100%;
+  height: 45rem;
+  background-image: url(/Img/MainPic.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#text {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  margin-left: 10%;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#text h1 {
+  color: aliceblue;
+  font-size: 5rem;
+  line-height: 4.7rem;
+}
+
+#intro h3 {
+  color: aliceblue;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  opacity: 0.6;
+  line-height: 1.8rem;
+}
+
+#pg {
+  color: aqua;
+  letter-spacing: 0.25rem;
+}
+
+#about {
+  width: 100%;
+  padding: 2rem;
+  background-color: #272b3b;
+}
+
+#about h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: rgb(164, 160, 160);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sec {
+  width: 100%;
+  background-color: #242734;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 2rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+#box1,
+#box2 {
+  width: 20rem;
+  height: auto;
+  background-color: #424657;
+  border-radius: 5%;
+  padding: 2rem;
+}
+
+#box1 h3,
+#box2 h3 {
+  line-height: 1.8rem;
+  color: azure;
+  font-size: 1.8rem;
+}
+
+#box1 p,
+#box2 p {
+  color: azure;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+#pro {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #2f3140;
+  gap: 1.5rem;
+}
+
+#name {
+  font-size: 1.9rem;
+  font-family: fantasy;
+  color: rgb(145, 93, 93);
+}
+
+#Code,
+#Bee,
+#Git {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+#Code img,
+#Bee img,
+#Git img {
+  width: 2rem;
+  margin-left: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+#Bee img {
+  width: 3rem;
+}
+
+#Git img {
+  width: 1.7rem;
+}
+
+#cont {
+  width: 100%;
+  padding: 2rem;
+  background-color: #272b3b;
+}
+
+#cont a {
+  text-decoration: none;
+  color: azure;
+}
+
+#cont h2 {
+  font-size: 3.8rem;
+  color: #5e73ac;
+}
+
+#cont i {
+  color: azure;
+}
+
+@media (max-width: 768px) {
+  #text {
+    width: 80%;
+    margin-left: 5%;
+    top: 5rem;
+  }
+
+  #text h1 {
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+  }
+
+  #intro h3 {
+    font-size: 1.3rem;
+  }
+
+  #pro,
+  #sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Code,
+  #Bee,
+  #Git {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  .pic {
+    height: 30rem;
+  }
+
+  #text {
+    width: 90%;
+    top: 4rem;
+    margin-left: 5%;
+  }
+
+  #text h1 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+  }
+
+  #intro h3 {
+    font-size: 1.2rem;
+  }
+
+  #about h3 {
+    font-size: 2rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  #box1,
+  #box2 {
+    width: 90%;
+  }
+
+  #cont h2 {
+    font-size: 2.5rem;
+  }
+
+  #Code img,
+  #Bee img,
+  #Git img {
+    width: 2rem;
+    margin: 0 0.5rem;
+  }
+
+  #Code,
+  #Bee,
+  #Git {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
